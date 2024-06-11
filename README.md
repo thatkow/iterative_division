@@ -1,7 +1,3 @@
-Sure, here's the modified README with the updated link:
-
----
-
 # Iterative Division Program
 
 This repository contains a C++ program that performs iterative division and prints each decimal value. Additionally, it includes a Bash script to automate running the program with different inputs.
@@ -44,7 +40,3 @@ This will execute the program for each prime number and print the results.
 ## Conversational Context
 
 For more information or assistance, refer to the conversation with the AI assistant on OpenAI's platform: [Link to Conversation](https://chatgpt.com/share/ce526598-1957-45ed-92b4-780f4f6d68d7)
-
----
-
-The link now points to the provided URL. If you need any further modifications, feel free to ask!
