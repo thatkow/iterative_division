@@ -64,8 +64,22 @@ int toInt(char ch) {
     return ch - 'A' + 10;
 }
 
+// Helper function to validate if a given number is valid in the specified base
+bool isValidNumber(const std::string& num, int base) {
+    for (char ch : num) {
+        int value = toInt(ch);
+        if (value >= base) return false;
+    }
+    return true;
+}
+
 // Main function to perform iterative division and print each decimal value
 void divideIteratively(const std::string& num1, const std::string& num2, int precision, int base) {
+    if (!isValidNumber(num1, base) || !isValidNumber(num2, base)) {
+        std::cerr << "Invalid number for the specified base." << std::endl;
+        return;
+    }
+
     std::string dividend = num1;
     std::string divisor = num2;
 
@@ -123,6 +137,7 @@ void divideIteratively(const std::string& num1, const std::string& num2, int pre
         std::cout << result << std::endl;
     }
 }
+
 int main(int argc, char *argv[]) {
     if (argc != 5) {
         std::cerr << "Usage: " << argv[0] << " <numerator> <denominator> <precision> <base>" << std::endl;
@@ -138,3 +153,4 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
+
