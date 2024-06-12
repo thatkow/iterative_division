@@ -31,7 +31,12 @@ primes=$(generate_primes)
 precision=1000
 base=10
 numerator="1"
+
+# Print header to CSV
+echo "Prime,Result"
+
 for prime in $primes; do
-    echo "Prime: $prime"
-    ./iterative_division "$numerator" "$prime" "$precision" "$base"
+    result=$(./iterative_division "$numerator" "$prime" "$precision" "$base")
+    echo "$prime,$result"
 done
+
