@@ -49,4 +49,4 @@ This will execute the program for each prime number and print the results in CSV
 
 ## Conversational Context
 
-For more information or assistance, refer to the conversation with the AI assistant on OpenAI's platform: [Link to Conversation](https://chatgpt.com/share/ce526598-1957-45ed-92b4-780f4f6d68d7)
+For more information or assistance, refer to the conversation with the AI assistant on OpenAI's platform: [Link to Conversation](https://chatgpt.com/share/d6c23cad-3542-4db9-83d9-04e3e110d218)
