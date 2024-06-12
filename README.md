@@ -19,15 +19,25 @@ Once compiled, you can run the program using the generated executable file (`ite
 3. Precision (number of decimal places)
 4. Base
 
-For example, to perform iterative division with `num1` as 1, `num2` as 123, precision as 1000, and base as 10, you would run:
+For example, to perform iterative division with `num1` as 1, `num2` as 37, precision as 1000, and base as 10, you would run:
 
 ```bash
-./iterative_division 1 123 1000 10
+./iterative_division 1 37 1000 10
 ```
 
 ## Automating Execution
 
 To automate running the program with different inputs, you can use the provided Bash script (`run_program_primes.sh`). This script generates the first 100 prime numbers and runs the program for each prime with `num1` as 1, `precision` as 1000, and `base` as 10.
+
+### Setting Execute Permissions
+
+Before running the script, ensure it has executable permissions. You can set this by running:
+
+```bash
+chmod +x run_program_primes.sh
+```
+
+### Running the Script
 
 To use the script, simply run:
 
@@ -35,7 +45,7 @@ To use the script, simply run:
 ./run_program_primes.sh
 ```
 
-This will execute the program for each prime number and print the results.
+This will execute the program for each prime number and print the results in CSV format to stdout.
 
 ## Conversational Context
 
